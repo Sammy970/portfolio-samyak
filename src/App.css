@@ -1,3 +1,8 @@
+@font-face {
+  font-family: google-sans-bold;
+  src: url(/src/Fonts/ProductSans-Bold.ttf);
+}
+
 .App {
   /* text-align: center; */
   background-color: #171717;
