@@ -18,7 +18,7 @@ const Sidebar = () => {
       <Link to={"/projects"}>Projects</Link>
       <h1>Blogs</h1>
       <h1>Skills</h1>
-      <h1>Certificates</h1>
+      <Link to={"/certificates"}>Certificates</Link>
       <h1>Timeline</h1>
       <h1>Contacts</h1>
     </VStack>

@@ -5,14 +5,14 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import About from "./components/About/About";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Projects from "./components/Projects/Projects";
+import Certificates from "./components/Certificates/Certificates";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
       <>
-        <Grid templateColumns="300px auto auto" gap={5}>
+        <Grid templateColumns="230px auto auto" gap={5}>
           <GridItem
             colSpan={1}
             bg="#f5f5f5"
@@ -30,10 +30,10 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/projects",
+    path: "/certificates",
     element: (
       <>
-        <Grid templateColumns="300px auto auto" gap={5}>
+        <Grid templateColumns="230px auto auto auto" gap={5}>
           <GridItem
             colSpan={1}
             bg="#f5f5f5"
@@ -43,8 +43,8 @@ const router = createBrowserRouter([
           >
             <Sidebar />
           </GridItem>
-          <GridItem colSpan={2} boxShadow="md" borderRadius="10px">
-            <Projects />
+          <GridItem colSpan={3} boxShadow="md" borderRadius="10px">
+            <Certificates />
           </GridItem>
         </Grid>
       </>
