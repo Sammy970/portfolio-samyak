@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Card, CardBody, Image } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
 
 const ProjectCard = (props) => {
   const { image } = props;
