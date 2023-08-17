@@ -39,6 +39,12 @@ const CertificateData = [
     title: "Advanced React",
     color: "#F4ECDD",
   },
+  {
+    id: "c7",
+    from: "Coursera",
+    title: "Introduction to HTML/CSS",
+    color: "#EFDADA",
+  },
 ];
 
 const Certificates = () => {
