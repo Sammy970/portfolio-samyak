@@ -16,7 +16,7 @@ const Sidebar = () => {
     >
       <Link to={"/"}>About</Link>
       <Link to={"/projects"}>Projects</Link>
-      <h1>Blogs</h1>
+      <Link to={"/blogs"}>Blogs</Link>
       <h1>Skills</h1>
       <Link to={"/certificates"}>Certificates</Link>
       <h1>Timeline</h1>
