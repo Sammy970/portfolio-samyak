@@ -7,6 +7,7 @@ import About from "./components/About/About";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Certificates from "./components/Certificates/Certificates";
 import Blogs from "./components/Blogs/Blogs";
+import Projects from "./components/Projects/Projects";
 
 const router = createBrowserRouter([
   {
@@ -67,6 +68,27 @@ const router = createBrowserRouter([
           </GridItem>
           <GridItem colSpan={3} boxShadow="md" borderRadius="10px">
             <Blogs />
+          </GridItem>
+        </Grid>
+      </>
+    ),
+  },
+  {
+    path: "/projects",
+    element: (
+      <>
+        <Grid templateColumns="230px auto auto" gap={5}>
+          <GridItem
+            colSpan={1}
+            bg="#f5f5f5"
+            boxShadow="md"
+            h="70vh"
+            borderRadius="10px"
+          >
+            <Sidebar />
+          </GridItem>
+          <GridItem colSpan={2} boxShadow="md" borderRadius="10px">
+            <Projects />
           </GridItem>
         </Grid>
       </>
