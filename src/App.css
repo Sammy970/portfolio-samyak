@@ -2,6 +2,18 @@
   font-family: google-sans-bold;
   src: url(/src/Fonts/ProductSans-Bold.ttf);
 }
+@font-face {
+  font-family: google-sans-medium;
+  src: url(/src/Fonts/ProductSans-Medium.ttf);
+}
+@font-face {
+  font-family: google-sans-regular;
+  src: url(/src/Fonts/ProductSans-Regular.ttf);
+}
+@font-face {
+  font-family: google-sans-black;
+  src: url(/src/Fonts/ProductSans-Black.ttf);
+}
 
 .App {
   /* text-align: center; */

@@ -1,10 +1,29 @@
+import { Container, Grid, GridItem } from "@chakra-ui/react";
 import "./App.css";
 import Profilebar from "./components/Profilebar/Profilebar";
+import Sidebar from "./components/Sidebar/Sidebar";
+import About from "./components/About/About";
 
 function App() {
   return (
     <div className="App">
-      <Profilebar />
+      <Container maxW={"90%"} className="App">
+        <Profilebar />
+        <Grid templateColumns="repeat(3, 1fr)" gap={10}>
+          <GridItem
+            colSpan={1}
+            bg="#f5f5f5"
+            boxShadow="md"
+            h={"70vh"}
+            borderRadius="10px"
+          >
+            <Sidebar />
+          </GridItem>
+          <GridItem colSpan={2} boxShadow="md" borderRadius="10px">
+            <About />
+          </GridItem>
+        </Grid>
+      </Container>
     </div>
   );
 }

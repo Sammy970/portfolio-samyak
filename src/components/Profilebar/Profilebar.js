@@ -1,11 +1,18 @@
-import { Image, SimpleGrid, Stack, Text, VStack } from "@chakra-ui/react";
+import {
+  Container,
+  Image,
+  SimpleGrid,
+  Stack,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import React from "react";
 import classes from "./Profilebar.module.css";
 
 const Profilebar = () => {
   return (
     <div className={classes.profileBar}>
-      <div className={classes.container}>
+      <Container maxW={"full"} className={classes.container}>
         <Stack
           direction={"row"}
           justifyContent={"space-between"}
@@ -46,7 +53,7 @@ const Profilebar = () => {
             </SimpleGrid>
           </VStack>
         </Stack>
-      </div>
+      </Container>
     </div>
   );
 };
