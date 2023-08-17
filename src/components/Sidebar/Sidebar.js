@@ -1,5 +1,6 @@
 import { VStack } from "@chakra-ui/react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -13,8 +14,8 @@ const Sidebar = () => {
       color="#1f1f1f"
       fontSize="23px"
     >
-      <h1>About</h1>
-      <h1>Projects</h1>
+      <Link to={"/"}>About</Link>
+      <Link to={"/projects"}>Projects</Link>
       <h1>Blogs</h1>
       <h1>Skills</h1>
       <h1>Certificates</h1>

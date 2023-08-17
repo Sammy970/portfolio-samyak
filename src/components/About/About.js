@@ -49,23 +49,6 @@ const About = () => {
     <>
       <Box boxShadow="md" borderRadius="13px" color="#f5f5f5" mb={10}>
         <Text ml={3} mb={3} fontSize="25px" fontFamily="google-sans-bold">
-          Education
-        </Text>
-        <VStack gap={4}>
-          {EducationData.map((data) => (
-            <DataCard
-              key={data.id}
-              year={data.year}
-              firstText={data.branchName}
-              secondText={data.collegeName}
-              image={data.image}
-              color={data.color}
-            />
-          ))}
-        </VStack>
-      </Box>
-      <Box boxShadow="md" borderRadius="13px" color="#f5f5f5" mb={10}>
-        <Text ml={3} mb={3} fontSize="25px" fontFamily="google-sans-bold">
           Experience
         </Text>
         <VStack gap={4}>
@@ -75,6 +58,23 @@ const About = () => {
               year={data.year}
               firstText={data.post}
               secondText={data.where}
+              image={data.image}
+              color={data.color}
+            />
+          ))}
+        </VStack>
+      </Box>
+      <Box boxShadow="md" borderRadius="13px" color="#f5f5f5" mb={10}>
+        <Text ml={3} mb={3} fontSize="25px" fontFamily="google-sans-bold">
+          Education
+        </Text>
+        <VStack gap={4}>
+          {EducationData.map((data) => (
+            <DataCard
+              key={data.id}
+              year={data.year}
+              firstText={data.branchName}
+              secondText={data.collegeName}
               image={data.image}
               color={data.color}
             />
