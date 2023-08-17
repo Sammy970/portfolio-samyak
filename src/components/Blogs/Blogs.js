@@ -2,6 +2,14 @@ import { Box, Grid, GridItem } from "@chakra-ui/react";
 import React from "react";
 import BlogCard from "./BlogCard/BlogCard";
 
+const colorPalette = [
+  "#DDEFE0",
+  "#F4ECDD",
+  "#EFDADA",
+  "#DEE0EF",
+  // Add more colors if needed
+];
+
 const BlogData = [
   {
     id: "b1",
@@ -9,7 +17,6 @@ const BlogData = [
     title:
       "Designing and implementing a voice-controlled roller blind [Part-2]",
     from: "Medium",
-    color: "#DDEFE0",
   },
   {
     id: "b2",
@@ -17,7 +24,6 @@ const BlogData = [
     title:
       "Designing and implementing a voice-controlled roller blind [Part-1]",
     from: "Medium",
-    color: "#F4ECDD",
   },
   {
     id: "b3",
@@ -31,21 +37,18 @@ const BlogData = [
     date: "January 17, 2023",
     title: "YOLOv8 The new State Of The Art Detector?",
     from: "Medium",
-    color: "#DEE0EF",
   },
   {
     id: "b5",
     date: "January 12, 2023",
     title: "Training a YOLOv7 Model using Custom Dataset",
     from: "Medium",
-    color: "#DDEFE0",
   },
   {
     id: "b5",
     date: "June 10, 2022",
     title: "IoT Protocols",
     from: "Medium",
-    color: "#F4ECDD",
   },
 ];
 
@@ -59,13 +62,13 @@ const Blogs = () => {
       mb={10}
     >
       <Grid templateColumns={"auto auto"} gap={5}>
-        {BlogData.map((blog) => (
+        {BlogData.map((blog, index) => (
           <GridItem key={blog.id}>
             <BlogCard
               date={blog.date}
               title={blog.title}
               from={blog.from}
-              color={blog.color}
+              color={colorPalette[index % colorPalette.length]}
             />
           </GridItem>
         ))}

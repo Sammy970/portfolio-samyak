@@ -2,6 +2,14 @@ import { Box, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 import DataCard from "./DataCard/DataCard";
 
+const colorPalette = [
+  "#DDEFE0",
+  "#F4ECDD",
+  "#EFDADA",
+  "#DEE0EF",
+  // Add more colors if needed
+];
+
 const EducationData = [
   {
     id: "edu1",
@@ -10,7 +18,6 @@ const EducationData = [
     collegeName: "Vishwakarma Institute of Technology, Pune",
     image:
       "https://www.collegebatch.com/static/clg-gallery/vishwakarma-institute-of-technology-pune-224988.jpg",
-    color: "#DDEFE0",
   },
   {
     id: "edu2",
@@ -19,7 +26,6 @@ const EducationData = [
     collegeName: "Vidyaprasarak Mandal Polytechnic College, Thane",
     image:
       "https://content3.jdmagicbox.com/comp/thane/42/022p8400842/catalogue/vidya-prasarak-mandals-polytechnic-thane-west-thane-engineering-institutes-njvsjog41i.jpg",
-    color: "#F4ECDD",
   },
   {
     id: "edu3",
@@ -28,7 +34,6 @@ const EducationData = [
     collegeName: "ST. John the Baptist High School and Junior College, Thane",
     image:
       "https://content3.jdmagicbox.com/comp/thane/42/022p8400842/catalogue/vidya-prasarak-mandals-polytechnic-thane-west-thane-engineering-institutes-njvsjog41i.jpg",
-    color: "#EFDADA",
   },
 ];
 
@@ -40,7 +45,6 @@ const ExperienceData = [
     where: "International Society of Automation (ISA)",
     image:
       "https://images.crunchbase.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1436854777/xc3cjzrnfciekp6ewd31.png",
-    color: "#DEE0EF",
   },
 ];
 
@@ -52,14 +56,14 @@ const About = () => {
           Experience
         </Text>
         <VStack gap={4}>
-          {ExperienceData.map((data) => (
+          {ExperienceData.map((data, index) => (
             <DataCard
               key={data.id}
               year={data.year}
               firstText={data.post}
               secondText={data.where}
               image={data.image}
-              color={data.color}
+              color={colorPalette[index % colorPalette.length]}
             />
           ))}
         </VStack>
@@ -69,14 +73,14 @@ const About = () => {
           Education
         </Text>
         <VStack gap={4}>
-          {EducationData.map((data) => (
+          {EducationData.map((data, index) => (
             <DataCard
               key={data.id}
               year={data.year}
               firstText={data.branchName}
               secondText={data.collegeName}
               image={data.image}
-              color={data.color}
+              color={colorPalette[index % colorPalette.length]}
             />
           ))}
         </VStack>
