@@ -9,12 +9,14 @@ function App() {
     <div className="App">
       <Container maxW={"90%"} className="App">
         <Profilebar />
-        <Grid templateColumns="repeat(3, 1fr)" gap={10}>
+        <Grid templateColumns="auto auto auto" gap={10}>
           <GridItem
             colSpan={1}
+            margin={"auto"}
             bg="#f5f5f5"
             boxShadow="md"
-            h={"70vh"}
+            h="70vh"
+            width="250px"
             borderRadius="10px"
           >
             <Sidebar />
