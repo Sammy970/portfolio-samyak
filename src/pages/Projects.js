@@ -15,6 +15,18 @@ const ProjectsData = [
     id: "p3",
     imageLoc: "project-image-assets/project3.png",
   },
+  {
+    id: "p4",
+    imageLoc: "project-image-assets/project4.png",
+  },
+  {
+    id: "p5",
+    imageLoc: "project-image-assets/project5.png",
+  },
+  {
+    id: "p6",
+    imageLoc: "project-image-assets/project6.png",
+  },
 ];
 const Projects = () => {
   return (
