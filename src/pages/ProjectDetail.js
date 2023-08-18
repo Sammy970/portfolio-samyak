@@ -5,9 +5,9 @@ import ProjectDetailCard from "../components/ProjectDetailCard/ProjectDetailCard
 const ProjectDetail = () => {
   const data = useLoaderData();
 
-  const { title } = data;
+  const { title, techUsed } = data;
 
-  return <ProjectDetailCard title={title} />;
+  return <ProjectDetailCard title={title} techUsed={techUsed} />;
 };
 
 export default ProjectDetail;
@@ -19,10 +19,12 @@ export function loader({ params }) {
     {
       id: "p1",
       title: "LinkedIn Post Maker",
+      techUsed: "ReactJS| Tailwind CSS | Express JS | OpenAI API",
     },
     {
       id: "p2",
       title: "Link - Kar",
+      techUsed: "ReactJS| Chakra UI | Express JS | MongoDB | NodeJS | API",
     },
   ];
 
@@ -39,9 +41,10 @@ export function loader({ params }) {
     );
   }
 
-  const { title } = SelectedProjectDetailData;
+  const { title, techUsed } = SelectedProjectDetailData;
 
   return {
     title,
+    techUsed,
   };
 }
