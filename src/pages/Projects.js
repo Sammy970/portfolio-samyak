@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectCard from "./ProjectCard/ProjectCard";
+import ProjectCard from "../components/ProjectCard/ProjectCard";
 import { Grid, GridItem } from "@chakra-ui/react";
 
 const ProjectsData = [

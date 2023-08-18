@@ -1,6 +1,6 @@
 import { Box, Text, VStack } from "@chakra-ui/react";
 import React from "react";
-import DataCard from "./DataCard/DataCard";
+import DataCard from "../components/DataCard/DataCard";
 
 const colorPalette = [
   "#DDEFE0",

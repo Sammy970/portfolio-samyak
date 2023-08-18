@@ -8,6 +8,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import classes from "./Profilebar.module.css";
+import { Link } from "react-router-dom";
 
 const Profilebar = () => {
   return (
@@ -18,11 +19,13 @@ const Profilebar = () => {
           justifyContent={"space-between"}
           alignItems={"center"}
         >
-          <Image
-            src="https://avatars.githubusercontent.com/u/70690987?s=400&u=6a5fd4c8ef4734bb224bf0f3823b735421078d82&v=4"
-            width={120}
-            borderRadius="50%"
-          />
+          <Link to={"/"}>
+            <Image
+              src="https://avatars.githubusercontent.com/u/70690987?s=400&u=6a5fd4c8ef4734bb224bf0f3823b735421078d82&v=4"
+              width={120}
+              borderRadius="50%"
+            />
+          </Link>
           <VStack alignItems="end" justifyContent="center">
             <Text className={classes.nameText}>Samyak Jain 👋</Text>
             <SimpleGrid columns={{ base: 3, sm: 6, md: 6 }} spacing={3}>

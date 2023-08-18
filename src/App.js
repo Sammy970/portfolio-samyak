@@ -1,11 +1,11 @@
 import { Container } from "@chakra-ui/react";
 import "./App.css";
-import About from "./components/About/About";
+import About from "./pages/About";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Certificates from "./components/Certificates/Certificates";
-import Blogs from "./components/Blogs/Blogs";
-import Projects from "./components/Projects/Projects";
+import Certificates from "./pages/Certificates";
+import Blogs from "./pages/Blogs";
+import Projects from "./pages/Projects";
 import RootLayout from "./pages/Root";
 
 const router = createBrowserRouter([

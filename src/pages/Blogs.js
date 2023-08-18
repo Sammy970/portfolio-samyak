@@ -1,6 +1,6 @@
 import { Box, Grid, GridItem } from "@chakra-ui/react";
 import React from "react";
-import BlogCard from "./BlogCard/BlogCard";
+import BlogCard from "../components/BlogCard/BlogCard";
 
 const colorPalette = [
   "#DDEFE0",
