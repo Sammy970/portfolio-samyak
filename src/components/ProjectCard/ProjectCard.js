@@ -1,9 +1,16 @@
 import React from "react";
 import { Box, Image } from "@chakra-ui/react";
 import Tilt from "react-parallax-tilt";
+import { useNavigate } from "react-router-dom";
 
 const ProjectCard = (props) => {
-  const { image } = props;
+  const navigate = useNavigate();
+  const { id, image } = props;
+
+  const handleNavigate = () => {
+    navigate(id);
+  };
+
   return (
     <Tilt
       tiltReverse={false}
@@ -18,6 +25,7 @@ const ProjectCard = (props) => {
         borderRadius="lg"
         overflow="hidden"
         boxShadow="md"
+        onClick={handleNavigate}
       >
         <Image src={image} alt="Card Image" w="100%" data-tilt />
       </Box>

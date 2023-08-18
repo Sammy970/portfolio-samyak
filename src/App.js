@@ -7,14 +7,29 @@ import Certificates from "./pages/Certificates";
 import Blogs from "./pages/Blogs";
 import Projects from "./pages/Projects";
 import RootLayout from "./pages/Root";
+import ProjectDetail, {
+  loader as projectDetailLoader,
+} from "./pages/ProjectDetail";
+import ErrorPage from "./pages/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    errorElement: <ErrorPage />,
     children: [
       { index: true, element: <About /> },
-      { path: "/projects", element: <Projects /> },
+      {
+        path: "/projects",
+        children: [
+          { index: true, element: <Projects /> },
+          {
+            path: ":projectId",
+            element: <ProjectDetail />,
+            loader: projectDetailLoader,
+          },
+        ],
+      },
       { path: "/blogs", element: <Blogs /> },
       { path: "/certificates", element: <Certificates /> },
     ],
