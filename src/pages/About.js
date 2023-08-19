@@ -33,7 +33,7 @@ const EducationData = [
     branchName: "SSC - 10th Standard",
     collegeName: "ST. John the Baptist High School and Junior College, Thane",
     image:
-      "https://content3.jdmagicbox.com/comp/thane/42/022p8400842/catalogue/vidya-prasarak-mandals-polytechnic-thane-west-thane-engineering-institutes-njvsjog41i.jpg",
+      "https://lh3.googleusercontent.com/p/AF1QipOVRAOapr7RIPgupAfnxqfThzZReYKf--IXezSk=s1360-w1360-h1020",
   },
 ];
 
