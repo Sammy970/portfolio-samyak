@@ -80,7 +80,7 @@ const ProjectDetailCard = (props) => {
 
         <Box width={"full"} alignItems={"center"}>
           <PhotoAlbum
-            layout="rows"
+            layout="columns"
             photos={photos}
             targetRowHeight={200}
             onClick={({ index: current }) => setIndex(current)}
