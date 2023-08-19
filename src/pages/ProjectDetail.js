@@ -5,7 +5,7 @@ import ProjectDetailCard from "../components/ProjectDetailCard/ProjectDetailCard
 const ProjectDetail = () => {
   const data = useLoaderData();
 
-  const { title, techUsed, desc, image, style } = data;
+  const { title, techUsed, desc, image, style, linkToWeb } = data;
 
   return (
     <ProjectDetailCard
@@ -14,6 +14,7 @@ const ProjectDetail = () => {
       desc={desc}
       image={image}
       style={style}
+      linkToWeb={linkToWeb}
     />
   );
 };
@@ -36,6 +37,7 @@ export function loader({ params }) {
         "/project-image-assets/project1/linkedinPostMaker_4.jpeg",
       ],
       style: "columns",
+      linkToWeb: "https://postit.is-an.app/",
     },
     {
       id: "link-kar",
@@ -60,6 +62,7 @@ export function loader({ params }) {
         "/project-image-assets/project2/linkkar_8.png",
       ],
       style: "columns",
+      linkToWeb: "https://linkkar.vercel.app/",
     },
     {
       id: "study-mate",
@@ -73,6 +76,7 @@ export function loader({ params }) {
         "/project-image-assets/project3/studymate_4.png",
       ],
       style: "rows",
+      linkToWeb: "https://test-dbms-proj.onrender.com/",
     },
     {
       id: "pdf-guardian",
@@ -96,6 +100,7 @@ export function loader({ params }) {
         "/project-image-assets/project4/pdfGuardian_6.png",
       ],
       style: "columns",
+      linkToWeb: "https://cn-project.onrender.com/",
     },
     {
       id: "samyakgpt-ui",
@@ -120,6 +125,7 @@ export function loader({ params }) {
         "/project-image-assets/project5/samyakgptUI_7.png",
       ],
       style: "columns",
+      linkToWeb: "https://samyakgptui.is-an.app/",
     },
     {
       id: "text-utils",
@@ -134,6 +140,7 @@ export function loader({ params }) {
         "/project-image-assets/project6/textutils_5.png",
       ],
       style: "columns",
+      linkToWeb: "https://sammy-textutils.vercel.app/",
     },
   ];
 
@@ -150,7 +157,8 @@ export function loader({ params }) {
     );
   }
 
-  const { title, techUsed, desc, image, style } = SelectedProjectDetailData;
+  const { title, techUsed, desc, image, style, linkToWeb } =
+    SelectedProjectDetailData;
 
   return {
     title,
@@ -158,5 +166,6 @@ export function loader({ params }) {
     desc,
     image,
     style,
+    linkToWeb,
   };
 }

@@ -1,5 +1,7 @@
 import {
   Box,
+  Button,
+  Divider,
   HStack,
   IconButton,
   Popover,
@@ -18,6 +20,7 @@ import PhotoAlbum from "react-photo-album";
 import Lightbox from "yet-another-react-lightbox";
 import { getImageSize } from "react-image-size";
 import { InfoOutlineIcon } from "@chakra-ui/icons";
+import { Link } from "react-router-dom";
 
 const colorPalette = [
   "#DDEFE0",
@@ -28,7 +31,7 @@ const colorPalette = [
 ];
 
 const ProjectDetailCard = (props) => {
-  const { title, techUsed, desc, image, style } = props;
+  const { title, techUsed, desc, image, style, linkToWeb } = props;
   const [index, setIndex] = useState(-1);
   const [photos, setPhotos] = useState([]);
 
@@ -57,7 +60,35 @@ const ProjectDetailCard = (props) => {
           {title}
         </Text>
 
-        <Stack direction={{ base: "row", md: "row" }} wrap={"wrap"} spacing={4}>
+        <Divider />
+
+        <Link to={linkToWeb} target="_blank">
+          <Button
+            w={{ base: "44%", sm: "40%", md: "25%" }}
+            backgroundColor={"#EFDADA"}
+            alignSelf={"center"}
+            fontFamily="google-sans-regular"
+            color={"#1F1F1F"}
+            fontSize={{ base: 18, md: 20 }}
+          >
+            Visit Website
+          </Button>
+        </Link>
+
+        <Text
+          alignSelf={"start"}
+          fontFamily="google-sans-medium"
+          color={"#FFFFFF"}
+          fontSize={25}
+        >
+          Tech Used -
+        </Text>
+        <Stack
+          direction={{ base: "row", md: "row" }}
+          wrap={"wrap"}
+          spacing={4}
+          alignItems={"center"}
+        >
           {techUsed.map((tech, index) => {
             const color = colorPalette[index % colorPalette.length];
             return (
@@ -73,6 +104,17 @@ const ProjectDetailCard = (props) => {
           })}
         </Stack>
 
+        <Divider />
+
+        <Text
+          alignSelf={"start"}
+          fontFamily="google-sans-medium"
+          color={"#FFFFFF"}
+          fontSize={25}
+        >
+          Description -
+        </Text>
+
         <Text
           fontFamily="google-sans-regular"
           textAlign={"justify"}
@@ -82,6 +124,8 @@ const ProjectDetailCard = (props) => {
           {desc}
         </Text>
       </VStack>
+
+      <Divider />
 
       <VStack w={"full"}>
         <HStack w={"full"} justifyContent={"space-between"}>
