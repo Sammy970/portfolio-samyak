@@ -27,7 +27,7 @@ const Profilebar = () => {
             />
           </Link>
           <VStack alignItems="end" justifyContent="center">
-            <Text className={classes.nameText}>Samyak Jain 👋</Text>
+            <Text className={classes.nameText}>Samyak Jain</Text>
             <SimpleGrid columns={{ base: 3, sm: 6, md: 6 }} spacing={3}>
               <Image
                 src="https://cdn0.iconfinder.com/data/icons/social-circle-3/72/Email-512.png"

@@ -54,7 +54,7 @@ const Certificates = () => {
       <Text ml={3} mb={3} fontSize="25px" fontFamily="google-sans-bold">
         Certificates
       </Text>
-      <Grid templateColumns={"auto auto auto"} gap={10}>
+      <Grid templateColumns={{ base: "auto", md: "auto auto auto" }} gap={10}>
         {CertificateData.map((certi, index) => (
           <GridItem key={certi.id}>
             <CertificateCard

@@ -31,7 +31,11 @@ const ProjectsData = [
 const Projects = () => {
   return (
     <>
-      <Grid templateColumns={"auto auto auto"} gap={5} mb={10}>
+      <Grid
+        templateColumns={{ base: "auto", md: "auto auto auto" }}
+        gap={5}
+        mb={10}
+      >
         {ProjectsData.map((proj) => (
           <GridItem key={proj.id}>
             <ProjectCard id={proj.id} image={proj.imageLoc} />

@@ -7,19 +7,22 @@ const DataCard = (props) => {
     <Card bg={color} borderRadius="10px" p={1} w={"full"}>
       <HStack justifyContent={"space-between"} ml={5} mr={5}>
         <VStack alignItems="left" gap={1}>
-          <Text fontFamily="google-sans-medium" fontSize={18}>
+          <Text fontFamily="google-sans-medium" fontSize={{ base: 14, md: 18 }}>
             {year}
           </Text>
-          <Text fontFamily="google-sans-black" fontSize={20}>
+          <Text fontFamily="google-sans-black" fontSize={{ base: 15, md: 20 }}>
             {firstText}
           </Text>
-          <Text fontFamily="google-sans-medium" fontSize={18}>
+          <Text fontFamily="google-sans-medium" fontSize={{ base: 14, md: 18 }}>
             {secondText}
           </Text>
         </VStack>
-        <VStack>
-          <Image src={image} width={90} height={90} borderRadius="50%" />
-        </VStack>
+        <Image
+          src={image}
+          width={{ base: 65, md: 90 }}
+          height={{ base: 65, md: 90 }}
+          borderRadius="50%"
+        />
       </HStack>
     </Card>
   );

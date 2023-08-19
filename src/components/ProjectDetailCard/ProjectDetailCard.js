@@ -1,4 +1,4 @@
-import { Box, HStack, Tag, TagLabel, Text, VStack } from "@chakra-ui/react";
+import { Box, Stack, Tag, TagLabel, Text, VStack } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import PhotoAlbum from "react-photo-album";
 import Lightbox from "yet-another-react-lightbox";
@@ -36,67 +36,65 @@ const ProjectDetailCard = (props) => {
   }, [image]);
 
   return (
-    <>
-      <VStack alignItems="center" w={"full"} gap={5}>
-        <VStack alignItems="left" spacing={5} w={"full"}>
-          <Text fontFamily="google-sans-black" color={"#FFFFFF"} fontSize={30}>
-            {title}
-          </Text>
+    <VStack alignItems="center" w={"full"} gap={5}>
+      <VStack alignItems="left" spacing={5} w={"full"}>
+        <Text fontFamily="google-sans-black" color={"#FFFFFF"} fontSize={30}>
+          {title}
+        </Text>
 
-          <HStack spacing={4}>
-            {techUsed.map((tech, index) => {
-              const color = colorPalette[index % colorPalette.length];
-              return (
-                <Tag
-                  size={"lg"}
-                  key={tech}
-                  variant="subtle"
-                  backgroundColor={color}
-                >
-                  <TagLabel>{tech}</TagLabel>
-                </Tag>
-              );
-            })}
-          </HStack>
+        <Stack direction={{ base: "row", md: "row" }} wrap={"wrap"} spacing={4}>
+          {techUsed.map((tech, index) => {
+            const color = colorPalette[index % colorPalette.length];
+            return (
+              <Tag
+                size={"lg"}
+                key={tech}
+                variant="subtle"
+                backgroundColor={color}
+              >
+                <TagLabel>{tech}</TagLabel>
+              </Tag>
+            );
+          })}
+        </Stack>
 
-          <Text
-            fontFamily="google-sans-regular"
-            textAlign={"justify"}
-            color={"#FFFFFF"}
-            fontSize={20}
-          >
-            {desc}
-          </Text>
-        </VStack>
-
-        <VStack w={"full"}>
-          <Text
-            alignSelf={"start"}
-            fontFamily="google-sans-medium"
-            color={"#FFFFFF"}
-            fontSize={25}
-          >
-            Screenshots
-          </Text>
-
-          <Box width={"full"} alignItems={"center"}>
-            <PhotoAlbum
-              layout="rows"
-              photos={photos}
-              targetRowHeight={200}
-              onClick={({ index: current }) => setIndex(current)}
-            />
-
-            <Lightbox
-              index={index}
-              slides={photos}
-              open={index >= 0}
-              close={() => setIndex(-1)}
-            />
-          </Box>
-        </VStack>
+        <Text
+          fontFamily="google-sans-regular"
+          textAlign={"justify"}
+          color={"#FFFFFF"}
+          fontSize={{ base: 17, md: 20 }}
+        >
+          {desc}
+        </Text>
       </VStack>
-    </>
+
+      <VStack w={"full"}>
+        <Text
+          alignSelf={"start"}
+          fontFamily="google-sans-medium"
+          color={"#FFFFFF"}
+          fontSize={25}
+        >
+          Screenshots
+        </Text>
+
+        <Box width={"full"} alignItems={"center"}>
+          <PhotoAlbum
+            layout="rows"
+            photos={photos}
+            targetRowHeight={200}
+            onClick={({ index: current }) => setIndex(current)}
+          />
+
+          <Lightbox
+            index={index}
+            slides={photos}
+            open={index >= 0}
+            close={() => setIndex(-1)}
+          />
+        </Box>
+      </VStack>
+    </VStack>
   );
 };
 

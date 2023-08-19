@@ -20,10 +20,10 @@ const BlogCard = (props) => {
       w={"full"}
     >
       <VStack alignItems="left" gap={1} ml={5} mr={5}>
-        <Text fontFamily="google-sans-medium" fontSize={18}>
+        <Text fontFamily="google-sans-medium" fontSize={{ base: 14, md: 18 }}>
           {date}
         </Text>
-        <Text noOfLines={2} fontFamily="google-sans-black" fontSize={20}>
+        <Text noOfLines={2} fontFamily="google-sans-black" fontSize={{ base: 15.5, md: 20 }}>
           {title}
         </Text>
         <CardFooter
@@ -31,7 +31,7 @@ const BlogCard = (props) => {
           justifyContent={"space-between"}
           alignItems={"center"}
         >
-          <Text fontFamily="google-sans-medium" fontSize={18}>
+          <Text fontFamily="google-sans-medium" fontSize={{ base: 15, md: 18 }}>
             {from}
           </Text>
           <Button
