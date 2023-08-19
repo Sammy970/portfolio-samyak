@@ -4,27 +4,27 @@ import { Grid, GridItem } from "@chakra-ui/react";
 
 const ProjectsData = [
   {
-    id: "p1",
+    id: "linkedin-post-maker",
     imageLoc: "project-image-assets/project1/project1.png",
   },
   {
-    id: "p2",
+    id: "link-kar",
     imageLoc: "project-image-assets/project2/project2.png",
   },
   {
-    id: "p3",
+    id: "study-mate",
     imageLoc: "project-image-assets/project3/project3.png",
   },
   {
-    id: "p4",
+    id: "pdf-guardian",
     imageLoc: "project-image-assets/project4/project4.png",
   },
   {
-    id: "p5",
+    id: "samyakgpt-ui",
     imageLoc: "project-image-assets/project5/project5.png",
   },
   {
-    id: "p6",
+    id: "text-utils",
     imageLoc: "project-image-assets/project6/project6.png",
   },
 ];

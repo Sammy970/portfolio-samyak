@@ -25,7 +25,7 @@ export function loader({ params }) {
 
   const ProjectDetailsData = [
     {
-      id: "p1",
+      id: "linkedin-post-maker",
       title: "LinkedIn Post Maker",
       techUsed: ["ReactJS", "Tailwind CSS", "Express JS", "OpenAI API"],
       desc: `Elevate your LinkedIn presence with the LinkedIn Post Maker - a dynamic tool leveraging OpenAI's gpt-3.5-turbo-16k model. Simplify post creation through predefined categories like Certifications, Publications, and Internships, or seamlessly craft posts on unique subjects. The user-friendly interface ensures ease of use, while a "Copy" button expedites content transfer. Hosted securely, this tool redefines LinkedIn engagement.`,
@@ -38,7 +38,7 @@ export function loader({ params }) {
       style: "columns",
     },
     {
-      id: "p2",
+      id: "link-kar",
       title: "Link - Kar",
       techUsed: [
         "ReactJS",
@@ -62,17 +62,43 @@ export function loader({ params }) {
       style: "columns",
     },
     {
-      id: "p3",
-      title: "StudyMate",
+      id: "pdf-guardian",
+      title: "PDF Guardian",
       techUsed: ["NodeJS", "EJS", "Express JS", "MongoDB"],
-      desc: `StudyMate, is an E-Library Project designed to empower students with a seamless e-learning experience. Offering a rich collection of Question Papers, Syllabus, and Notes spanning various college branches, StudyMate simplifies resource discovery. With intuitive filters, students can effortlessly navigate content by semester, year, and branch. The platform's secure foundation, powered by MongoDB ATLAS on the cloud, ensures data safety while enabling direct PDF interaction - whether for downloads or on-site viewing. For administrators, an easy-to-use interface facilitates efficient PDF management, ensuring the library remains updated. StudyMate is the embodiment of efficient e-learning, delivering knowledge at your fingertips.`,
+      desc: `PDF Guardian.`,
       image: [
         "/project-image-assets/project3/studymate_1.png",
         "/project-image-assets/project3/studymate_2.png",
         "/project-image-assets/project3/studymate_3.png",
         "/project-image-assets/project3/studymate_4.png",
       ],
-      style: "rows",
+      style: "columns",
+    },
+    {
+      id: "samyakgpt-ui",
+      title: "SamyakGPT UI",
+      techUsed: ["NodeJS", "EJS", "Express JS", "MongoDB"],
+      desc: `Samyak GPT UI`,
+      image: [
+        "/project-image-assets/project3/studymate_1.png",
+        "/project-image-assets/project3/studymate_2.png",
+        "/project-image-assets/project3/studymate_3.png",
+        "/project-image-assets/project3/studymate_4.png",
+      ],
+      style: "columns",
+    },
+    {
+      id: "text-utils",
+      title: "Text Utils",
+      techUsed: ["NodeJS", "EJS", "Express JS", "MongoDB"],
+      desc: `Text Utils`,
+      image: [
+        "/project-image-assets/project3/studymate_1.png",
+        "/project-image-assets/project3/studymate_2.png",
+        "/project-image-assets/project3/studymate_3.png",
+        "/project-image-assets/project3/studymate_4.png",
+      ],
+      style: "columns",
     },
   ];
 
