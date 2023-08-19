@@ -1,7 +1,17 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import Profilebar from "../components/Profilebar/Profilebar";
-import { Box, Grid, GridItem } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Grid,
+  GridItem,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+} from "@chakra-ui/react";
+import { ChevronDownIcon } from "@chakra-ui/icons";
 import Sidebar from "../components/Sidebar/Sidebar";
 
 const RootLayout = () => {
@@ -27,16 +37,48 @@ const RootLayout = () => {
         </Box>
 
         {/* For smaller screens (mobile) */}
-        <Box display={{ base: "block", md: "none" }}>
-          <Grid templateRows={"1fr auto"} gap={5}>
+        <Box display={{ base: "block", md: "none" }} w={"full"}>
+          <Grid templateRows={"1fr auto"} gap={5} w={"full"}>
             <GridItem
               rowSpan={1}
-              bg="#f5f5f5"
+              // bg="#f5f5f5"
               boxShadow="md"
               h="auto"
+              w={"full"}
               borderRadius="10px"
             >
-              <Sidebar />
+              <Menu>
+                <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+                  Menu
+                </MenuButton>
+                <MenuList
+                  color={"#1f1f1f"}
+                  fontFamily={"google-sans-medium"}
+                  fontSize={16}
+                >
+                  <Link to={"/"}>
+                    <MenuItem>About</MenuItem>
+                  </Link>
+                  <Link to={"/projects"}>
+                    <MenuItem>Projects</MenuItem>
+                  </Link>
+                  <Link to={"/blogs"}>
+                    <MenuItem>Blogs</MenuItem>
+                  </Link>
+                  <Link to={"/skills"}>
+                    <MenuItem>Skills</MenuItem>
+                  </Link>
+                  <Link to={"/certificates"}>
+                    <MenuItem>Certificates</MenuItem>
+                  </Link>
+                  <Link to={"/timeline"}>
+                    <MenuItem>Timeline</MenuItem>
+                  </Link>
+                  <Link to={"/contacts"}>
+                    <MenuItem>Contacts</MenuItem>
+                  </Link>
+                </MenuList>
+              </Menu>
             </GridItem>
             <GridItem rowSpan={1} boxShadow="md" borderRadius="10px">
               <Outlet />

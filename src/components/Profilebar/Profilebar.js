@@ -9,6 +9,7 @@ import {
 import React from "react";
 import classes from "./Profilebar.module.css";
 import { Link } from "react-router-dom";
+import { wrap } from "framer-motion";
 
 const Profilebar = () => {
   return (
@@ -28,7 +29,13 @@ const Profilebar = () => {
           </Link>
           <VStack alignItems="end" justifyContent="center">
             <Text className={classes.nameText}>Samyak Jain</Text>
-            <SimpleGrid columns={{ base: 3, sm: 6, md: 6 }} spacing={3}>
+            <SimpleGrid
+              w={"full"}
+              columns={{ base: 3, sm: 6, md: 6 }}
+              flexWrap={wrap}
+              // spacing={3}
+              gap={3}
+            >
               <Image
                 src="https://cdn0.iconfinder.com/data/icons/social-circle-3/72/Email-512.png"
                 className={classes.socialIcon}
