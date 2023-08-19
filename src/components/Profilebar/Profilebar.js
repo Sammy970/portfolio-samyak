@@ -36,30 +36,45 @@ const Profilebar = () => {
               // spacing={3}
               gap={3}
             >
-              <Image
-                src="https://cdn0.iconfinder.com/data/icons/social-circle-3/72/Email-512.png"
-                className={classes.socialIcon}
-              />
-              <Image
-                src="https://cdn4.iconfinder.com/data/icons/social-media-circle-7/512/Medium_circle-512.png"
-                className={classes.socialIcon}
-              />
-              <Image
-                src="https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/github-512.png"
-                className={classes.socialIcon}
-              />
-              <Image
-                src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Linkedin_svg-512.png"
-                className={classes.socialIcon}
-              />
-              <Image
-                src="https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/github-512.png"
-                className={classes.socialIcon}
-              />
-              <Image
-                src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Linkedin_svg-512.png"
-                className={classes.socialIcon}
-              />
+              <Link to={"mailto:jainsamyak2002.sj@gmail.com"}>
+                <Image
+                  src="https://cdn0.iconfinder.com/data/icons/social-circle-3/72/Email-512.png"
+                  className={classes.socialIcon}
+                />
+              </Link>
+              <Link to={"https://samyak970.medium.com/"} target="_blank">
+                <Image
+                  src="https://cdn4.iconfinder.com/data/icons/social-media-circle-7/512/Medium_circle-512.png"
+                  className={classes.socialIcon}
+                />
+              </Link>
+              <Link to={"https://github.com/Sammy970"} target="_blank">
+                <Image
+                  src="https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/github-512.png"
+                  className={classes.socialIcon}
+                />
+              </Link>
+              <Link
+                to={"https://www.linkedin.com/in/samyak-jain-3a6639172/"}
+                target="_blank"
+              >
+                <Image
+                  src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Linkedin_svg-512.png"
+                  className={classes.socialIcon}
+                />
+              </Link>
+              <Link>
+                <Image
+                  src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Instagram_svg-512.png"
+                  className={classes.socialIcon}
+                />
+              </Link>
+              <Link>
+                <Image
+                  src="https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-contained-outline-512.png"
+                  className={classes.socialIcon}
+                />
+              </Link>
             </SimpleGrid>
           </VStack>
         </Stack>
