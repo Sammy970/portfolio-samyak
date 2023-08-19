@@ -8,7 +8,10 @@ const Sidebar = () => {
       alignItems="center"
       spacing={{ base: 6, sm: 8 }}
       p={4}
-      h={"full"}
+      bg="#f5f5f5"
+      boxShadow="md"
+      borderRadius="10px"
+      h={"auto"}
       justifyContent="center"
       fontFamily="google-sans-bold"
       color="#1f1f1f"
@@ -17,10 +20,10 @@ const Sidebar = () => {
       <Link to={"/"}>About</Link>
       <Link to={"/projects"}>Projects</Link>
       <Link to={"/blogs"}>Blogs</Link>
-      <h1>Skills</h1>
+      <Link to={"/skills"}>Skills</Link>
       <Link to={"/certificates"}>Certificates</Link>
-      <h1>Timeline</h1>
-      <h1>Contacts</h1>
+      <Link to={"/timeline"}>Timeline</Link>
+      <Link to={"/contacts"}>Contacts</Link>
     </VStack>
   );
 };

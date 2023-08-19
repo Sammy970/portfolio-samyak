@@ -1,10 +1,4 @@
-import {
-  Button,
-  Card,
-  CardFooter,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Button, Card, CardFooter, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 
 const BlogCard = (props) => {
@@ -23,7 +17,11 @@ const BlogCard = (props) => {
         <Text fontFamily="google-sans-medium" fontSize={{ base: 14, md: 18 }}>
           {date}
         </Text>
-        <Text noOfLines={2} fontFamily="google-sans-black" fontSize={{ base: 15.5, md: 20 }}>
+        <Text
+          noOfLines={2}
+          fontFamily="google-sans-black"
+          fontSize={{ base: 15.5, md: 20 }}
+        >
           {title}
         </Text>
         <CardFooter

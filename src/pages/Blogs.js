@@ -61,7 +61,15 @@ const Blogs = () => {
       color="#f5f5f5"
       mb={10}
     >
-      <Grid templateColumns={{ base: "auto", md: "auto auto" }} gap={5}>
+      <Grid
+        templateColumns={{
+          base: "auto",
+          sm: "auto",
+          md: " auto",
+          lg: "auto auto",
+        }}
+        gap={5}
+      >
         {BlogData.map((blog, index) => (
           <GridItem key={blog.id}>
             <BlogCard

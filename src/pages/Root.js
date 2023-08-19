@@ -23,10 +23,7 @@ const RootLayout = () => {
           <Grid templateColumns={"230px auto auto"} gap={5}>
             <GridItem
               colSpan={1}
-              bg="#f5f5f5"
-              boxShadow="md"
-              h="70vh"
-              borderRadius="10px"
+              maxH={"70vh"}
             >
               <Sidebar />
             </GridItem>
