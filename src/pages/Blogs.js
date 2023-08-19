@@ -45,7 +45,7 @@ const BlogData = [
     from: "Medium",
   },
   {
-    id: "b5",
+    id: "b6",
     date: "June 10, 2022",
     title: "IoT Protocols",
     from: "Medium",

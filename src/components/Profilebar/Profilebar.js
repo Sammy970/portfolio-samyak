@@ -31,7 +31,7 @@ const Profilebar = () => {
             <Text className={classes.nameText}>Samyak Jain</Text>
             <SimpleGrid
               w={"full"}
-              columns={{ base: 3, sm: 6, md: 6 }}
+              columns={{ base: 3, sm: 5, md: 6 }}
               flexWrap={wrap}
               // spacing={3}
               gap={3}
