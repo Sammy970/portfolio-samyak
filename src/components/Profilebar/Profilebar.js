@@ -24,7 +24,7 @@ const Profilebar = () => {
             <Image
               src="https://avatars.githubusercontent.com/u/70690987?s=400&u=6a5fd4c8ef4734bb224bf0f3823b735421078d82&v=4"
               width={120}
-              borderRadius="50%"
+              borderRadius={{ base: 12, md: "50%" }}
             />
           </Link>
           <VStack alignItems="end" justifyContent="center">
