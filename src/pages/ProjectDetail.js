@@ -5,7 +5,7 @@ import ProjectDetailCard from "../components/ProjectDetailCard/ProjectDetailCard
 const ProjectDetail = () => {
   const data = useLoaderData();
 
-  const { title, techUsed, desc, image } = data;
+  const { title, techUsed, desc, image, style } = data;
 
   return (
     <ProjectDetailCard
@@ -13,6 +13,7 @@ const ProjectDetail = () => {
       techUsed={techUsed}
       desc={desc}
       image={image}
+      style={style}
     />
   );
 };
@@ -34,6 +35,7 @@ export function loader({ params }) {
         "/project-image-assets/project1/linkedinPostMaker_3.jpeg",
         "/project-image-assets/project1/linkedinPostMaker_4.jpeg",
       ],
+      style: "columns",
     },
     {
       id: "p2",
@@ -57,16 +59,12 @@ export function loader({ params }) {
         "/project-image-assets/project2/linkkar_7.png",
         "/project-image-assets/project2/linkkar_8.png",
       ],
+      style: "columns",
     },
     {
       id: "p3",
       title: "StudyMate",
-      techUsed: [
-        "NodeJS",
-        "EJS",
-        "Express JS",
-        "MongoDB",
-      ],
+      techUsed: ["NodeJS", "EJS", "Express JS", "MongoDB"],
       desc: `StudyMate, is an E-Library Project designed to empower students with a seamless e-learning experience. Offering a rich collection of Question Papers, Syllabus, and Notes spanning various college branches, StudyMate simplifies resource discovery. With intuitive filters, students can effortlessly navigate content by semester, year, and branch. The platform's secure foundation, powered by MongoDB ATLAS on the cloud, ensures data safety while enabling direct PDF interaction - whether for downloads or on-site viewing. For administrators, an easy-to-use interface facilitates efficient PDF management, ensuring the library remains updated. StudyMate is the embodiment of efficient e-learning, delivering knowledge at your fingertips.`,
       image: [
         "/project-image-assets/project3/studymate_1.png",
@@ -74,6 +72,7 @@ export function loader({ params }) {
         "/project-image-assets/project3/studymate_3.png",
         "/project-image-assets/project3/studymate_4.png",
       ],
+      style: "rows",
     },
   ];
 
@@ -90,12 +89,13 @@ export function loader({ params }) {
     );
   }
 
-  const { title, techUsed, desc, image } = SelectedProjectDetailData;
+  const { title, techUsed, desc, image, style } = SelectedProjectDetailData;
 
   return {
     title,
     techUsed,
     desc,
     image,
+    style,
   };
 }
