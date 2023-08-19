@@ -77,7 +77,15 @@ export function loader({ params }) {
     {
       id: "pdf-guardian",
       title: "PDF Guardian",
-      techUsed: ["NodeJS", "EJS", "Express JS", "MongoDB"],
+      techUsed: [
+        "EJS",
+        "BootStrap CSS",
+        "HTML",
+        "CSS",
+        "FLASK",
+        "Python",
+        "MongoDB",
+      ],
       desc: `PDF Guardian.`,
       image: [
         "/project-image-assets/project3/studymate_1.png",
@@ -90,8 +98,16 @@ export function loader({ params }) {
     {
       id: "samyakgpt-ui",
       title: "SamyakGPT UI",
-      techUsed: ["NodeJS", "EJS", "Express JS", "MongoDB"],
-      desc: `Samyak GPT UI`,
+      techUsed: [
+        "ReactJS",
+        "NodeJS",
+        "ExpressJS",
+        "OpenAI GPT API",
+        "ChimeraGPT AI",
+        "HTML",
+        "CSS",
+      ],
+      desc: `SamyakGPT UI`,
       image: [
         "/project-image-assets/project3/studymate_1.png",
         "/project-image-assets/project3/studymate_2.png",
@@ -103,7 +119,7 @@ export function loader({ params }) {
     {
       id: "text-utils",
       title: "Text Utils",
-      techUsed: ["NodeJS", "EJS", "Express JS", "MongoDB"],
+      techUsed: ["ReactJS", "BootStrap CSS", "HTML", "CSS"],
       desc: `Text Utils`,
       image: [
         "/project-image-assets/project3/studymate_1.png",
