@@ -57,9 +57,9 @@ const Certificates = () => {
       <Grid
         templateColumns={{
           base: "auto",
-          sm: "auto auto",
-          md: "auto auto",
-          lg: "auto auto auto",
+          sm: "1fr 1fr",
+          md: "1fr 1fr",
+          lg: "1fr 1fr 1fr",
         }}
         gap={10}
       >
