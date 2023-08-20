@@ -15,6 +15,7 @@ import ErrorPage from "./pages/Error";
 import { ThemeProvider } from "@mui/material";
 import theme from "./theme";
 import Timeline from "./pages/Timeline";
+import Skills from "./pages/Skills";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,7 @@ const router = createBrowserRouter([
           </ThemeProvider>
         ),
       },
+      { path: "/skills", element: <Skills /> },
     ],
   },
 ]);
