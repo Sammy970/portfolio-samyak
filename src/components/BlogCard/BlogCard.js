@@ -13,6 +13,7 @@ const BlogCard = (props) => {
       borderRadius="10px"
       p={2}
       w={"full"}
+      boxShadow={"2xl"}
     >
       <VStack alignItems="left" gap={1} ml={5} mr={5}>
         <Text fontFamily="google-sans-medium" fontSize={{ base: 14, md: 18 }}>

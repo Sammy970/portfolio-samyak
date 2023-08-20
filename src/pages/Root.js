@@ -19,12 +19,9 @@ const RootLayout = () => {
     <>
       <Profilebar />
       <main>
-        <Box display={{ base: "none", md: "block" }}>
+        <Box display={{ base: "none", md: "none", lg: "block" }}>
           <Grid templateColumns={"230px auto auto"} gap={5}>
-            <GridItem
-              colSpan={1}
-              maxH={"70vh"}
-            >
+            <GridItem colSpan={1} maxH={"70vh"}>
               <Sidebar />
             </GridItem>
             <GridItem colSpan={2} boxShadow="md" borderRadius="10px">
@@ -34,7 +31,7 @@ const RootLayout = () => {
         </Box>
 
         {/* For smaller screens (mobile) */}
-        <Box display={{ base: "block", md: "none" }} w={"full"}>
+        <Box display={{ base: "block", md: "block", lg: "none" }} w={"full"}>
           <Grid templateRows={"1fr auto"} gap={5} w={"full"}>
             <GridItem
               rowSpan={1}

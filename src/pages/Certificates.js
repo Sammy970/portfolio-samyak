@@ -57,6 +57,7 @@ const Certificates = () => {
       <Grid
         templateColumns={{
           base: "auto",
+          sm: "auto auto",
           md: "auto auto",
           lg: "auto auto auto",
         }}

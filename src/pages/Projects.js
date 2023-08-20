@@ -34,8 +34,9 @@ const Projects = () => {
       <Grid
         templateColumns={{
           base: "auto",
-          md: "auto",
-          lg: "auto auto auto",
+          md: "auto auto",
+          lg: "auto auto",
+          xl: "auto auto auto",
         }}
         gap={5}
         mb={10}
