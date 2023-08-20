@@ -15,7 +15,6 @@ import ErrorPage from "./pages/Error";
 import { ThemeProvider } from "@mui/material";
 import theme from "./theme";
 import Timeline from "./pages/Timeline";
-import { useEffect } from "react";
 
 const router = createBrowserRouter([
   {
@@ -50,9 +49,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  useEffect(() => {
-    inject();
-  }, []);
+  inject();
 
   return (
     <div className="App">
