@@ -12,7 +12,6 @@ import {
 } from "@mui/lab";
 import TimelineCard from "../components/TimelineCard/TimelineCard";
 import { Text } from "@chakra-ui/react";
-import { wrap } from "framer-motion";
 
 const TimelinePage = () => {
   return (
