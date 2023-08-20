@@ -11,6 +11,9 @@ import ProjectDetail, {
   loader as projectDetailLoader,
 } from "./pages/ProjectDetail";
 import ErrorPage from "./pages/Error";
+import { ThemeProvider } from "@mui/material";
+import theme from "./theme";
+import Timeline from "./pages/Timeline";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +35,14 @@ const router = createBrowserRouter([
       },
       { path: "/blogs", element: <Blogs /> },
       { path: "/certificates", element: <Certificates /> },
+      {
+        path: "/timeline",
+        element: (
+          <ThemeProvider theme={theme}>
+            <Timeline />
+          </ThemeProvider>
+        ),
+      },
     ],
   },
 ]);
