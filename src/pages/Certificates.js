@@ -15,36 +15,49 @@ const CertificateData = [
     id: "c1",
     from: "Coursera",
     title: "Meta Front-End Developer Specialization",
+    link: "https://www.coursera.org/account/accomplishments/specialization/certificate/WQVBGVFF9JE6",
   },
   {
     id: "c2",
     from: "Coursera",
-    title: "React Native",
+    title: "Advanced React",
+    link: "https://www.coursera.org/account/accomplishments/certificate/Y82LJARS9ZV7",
   },
   {
     id: "c3",
     from: "Coursera",
-    title: "Principles of UX/UI Design",
+    title: "React Basics",
+    link: "https://www.coursera.org/account/accomplishments/certificate/ZC854WR8C9DK",
   },
   {
     id: "c4",
     from: "Coursera",
-    title: "Programming with JavaScript",
+    title: "Principles of UX/UI Design",
+    link: "https://www.coursera.org/account/accomplishments/certificate/ND3NW5B8KUTK",
   },
   {
     id: "c5",
     from: "Coursera",
-    title: "HTML and CSS in depth",
+    title: "Version Control",
+    link: "https://www.coursera.org/account/accomplishments/certificate/4ZDDLVM3KZJ2",
   },
   {
     id: "c6",
     from: "Coursera",
-    title: "Advanced React",
+    title: "Programming with JavaScript",
+    link: "https://www.coursera.org/account/accomplishments/certificate/75VENDEFAF8A",
   },
   {
     id: "c7",
     from: "Coursera",
-    title: "Introduction to HTML/CSS",
+    title: "HTML and CSS in depth",
+    link: "https://www.coursera.org/account/accomplishments/certificate/2DQ79KBZYWXU",
+  },
+  {
+    id: "c8",
+    from: "Coursera",
+    title: "React Native",
+    link: "https://www.coursera.org/account/accomplishments/specialization/certificate/WQVBGVFF9JE6",
   },
 ];
 
@@ -68,6 +81,7 @@ const Certificates = () => {
             <CertificateCard
               from={certi.from}
               title={certi.title}
+              link={certi.link}
               color={colorPalette[index % colorPalette.length]}
             />
           </GridItem>
