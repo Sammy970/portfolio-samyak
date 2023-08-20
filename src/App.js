@@ -1,6 +1,7 @@
 import { Container } from "@chakra-ui/react";
 import "./App.css";
 import About from "./pages/About";
+import { inject } from "@vercel/analytics";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Certificates from "./pages/Certificates";
@@ -14,6 +15,7 @@ import ErrorPage from "./pages/Error";
 import { ThemeProvider } from "@mui/material";
 import theme from "./theme";
 import Timeline from "./pages/Timeline";
+import { useEffect } from "react";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +50,10 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  useEffect(() => {
+    inject();
+  }, []);
+
   return (
     <div className="App">
       <Container maxW={"90%"} className="App">
