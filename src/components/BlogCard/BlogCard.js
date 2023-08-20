@@ -1,8 +1,9 @@
 import { Button, Card, CardFooter, Text, VStack } from "@chakra-ui/react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BlogCard = (props) => {
-  const { date, title, from, color } = props;
+  const { date, title, from, link, color } = props;
 
   return (
     <Card
@@ -32,14 +33,16 @@ const BlogCard = (props) => {
           <Text fontFamily="google-sans-medium" fontSize={{ base: 15, md: 18 }}>
             {from}
           </Text>
-          <Button
-            backgroundColor={"#1f1f1f"}
-            color={"#FFFFFF"}
-            fontFamily="google-sans-regular"
-            letterSpacing={1}
-          >
-            Read More
-          </Button>
+          <Link to={link} target="_blank">
+            <Button
+              backgroundColor={"#1f1f1f"}
+              color={"#FFFFFF"}
+              fontFamily="google-sans-regular"
+              letterSpacing={1}
+            >
+              Read More
+            </Button>
+          </Link>
         </CardFooter>
       </VStack>
     </Card>

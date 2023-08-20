@@ -1,6 +1,7 @@
 import { Box, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 import DataCard from "../components/DataCard/DataCard";
+import AboutCard from "../components/AboutCard/AboutCard";
 
 const colorPalette = [
   "#DDEFE0",
@@ -48,9 +49,20 @@ const ExperienceData = [
   },
 ];
 
+const AboutMeData =
+  "Hello! I'm Samyak Jain, currently pursuing a B.Tech in Instrumentation and Control Engineering at VIT Pune. My skillset includes JavaScript, React.js, React Native, Node.js, and MongoDB, and I have a strong passion for web development and open-source contributions. As the Web Development Head of ISA VIT Pune, I'm dedicated to enhancing my skills, completing projects, and staying updated with industry trends.";
+
 const About = () => {
   return (
     <>
+      <Box boxShadow="md" borderRadius="13px" color="#f5f5f5" mb={10}>
+        <Text ml={3} mb={3} fontSize="25px" fontFamily="google-sans-bold">
+          About Me
+        </Text>
+        <VStack gap={4}>
+          <AboutCard data={AboutMeData} />
+        </VStack>
+      </Box>
       <Box boxShadow="md" borderRadius="13px" color="#f5f5f5" mb={10}>
         <Text ml={3} mb={3} fontSize="25px" fontFamily="google-sans-bold">
           Experience
