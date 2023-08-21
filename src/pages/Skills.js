@@ -6,7 +6,11 @@ const Skills = () => {
   return (
     <>
       <Grid
-        templateColumns={{ base: "1fr 1fr", md: "1fr 1fr 1fr 1fr" }}
+        templateColumns={{
+          base: "1fr 1fr",
+          md: "1fr 1fr 1fr",
+          lg: "1fr 1fr 1fr 1fr",
+        }}
         gap={8}
       >
         <GridItem>

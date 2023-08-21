@@ -26,7 +26,7 @@ const SkillCard = (props) => {
           >
             {title}
           </Text>
-          <Progress value={value} borderRadius={8} size="lg" variant={color} />
+          <Progress value={value} borderRadius={8} size="md" variant={color} />
         </Stack>
       </CardBody>
     </Card>
