@@ -25,7 +25,7 @@ const SkillsData = [
         id: "fe2",
         image: "/skill-image-assets/Nextjs.png",
         title: "Next.js",
-        value: "10",
+        value: "30",
       },
       {
         id: "fe3",
@@ -43,7 +43,7 @@ const SkillsData = [
         id: "fe5",
         image: "/skill-image-assets/ChakraUI.png",
         title: "Chakra UI",
-        value: "50",
+        value: "60",
       },
       {
         id: "fe6",
@@ -55,7 +55,7 @@ const SkillsData = [
         id: "fe7",
         image: "/skill-image-assets/Tailwind.png",
         title: "Tailwind",
-        value: "50",
+        value: "70",
       },
     ],
   },

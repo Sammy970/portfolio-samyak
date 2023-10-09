@@ -31,7 +31,7 @@ const colorPalette = [
 ];
 
 const ProjectDetailCard = (props) => {
-  const { title, techUsed, desc, image, style, linkToWeb } = props;
+  const { title, techUsed, desc, github, image, style, linkToWeb } = props;
   const [index, setIndex] = useState(-1);
   const [photos, setPhotos] = useState([]);
 
@@ -62,18 +62,40 @@ const ProjectDetailCard = (props) => {
 
         <Divider />
 
-        <Link to={linkToWeb} target="_blank">
-          <Button
-            w={{ base: "44%", sm: "40%", md: "25%" }}
-            backgroundColor={"#EFDADA"}
-            alignSelf={"center"}
-            fontFamily="google-sans-regular"
-            color={"#1F1F1F"}
-            fontSize={{ base: 18, md: 20 }}
-          >
-            Visit Website
-          </Button>
-        </Link>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "start",
+            alignItems: "center",
+            gap: "20px",
+            flexWrap: "wrap",
+          }}
+        >
+          <Link to={linkToWeb} target="_blank">
+            <Button
+              w={"100%"}
+              backgroundColor={"#EFDADA"}
+              alignSelf={"center"}
+              fontFamily="google-sans-regular"
+              color={"#1F1F1F"}
+              fontSize={{ base: 18, md: 20 }}
+            >
+              Visit Website
+            </Button>
+          </Link>
+          <Link to={github} target="_blank">
+            <Button
+              w={"100%"}
+              backgroundColor={"#DDEFE0"}
+              alignSelf={"center"}
+              fontFamily="google-sans-regular"
+              color={"#1F1F1F"}
+              fontSize={{ base: 18, md: 20 }}
+            >
+              GitHub Repository
+            </Button>
+          </Link>
+        </div>
 
         <Text
           alignSelf={"start"}

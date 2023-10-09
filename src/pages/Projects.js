@@ -4,12 +4,20 @@ import { Grid, GridItem } from "@chakra-ui/react";
 
 const ProjectsData = [
   {
+    id: "link-kar",
+    imageLoc: "project-image-assets/project2/project2.png",
+  },
+  {
     id: "linkedin-post-maker",
     imageLoc: "project-image-assets/project1/project1.png",
   },
   {
-    id: "link-kar",
-    imageLoc: "project-image-assets/project2/project2.png",
+    id: "social-downloader",
+    imageLoc: "project-image-assets/project7/project7.png",
+  },
+  {
+    id: "nike-web-clone",
+    imageLoc: "project-image-assets/project8/project8.png",
   },
   {
     id: "study-mate",
@@ -28,6 +36,7 @@ const ProjectsData = [
     imageLoc: "project-image-assets/project6/project6.png",
   },
 ];
+
 const Projects = () => {
   return (
     <>
