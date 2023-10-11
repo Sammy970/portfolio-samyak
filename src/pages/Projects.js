@@ -12,6 +12,10 @@ const ProjectsData = [
     imageLoc: "project-image-assets/project1/project1.png",
   },
   {
+    id: "figma-to-code",
+    imageLoc: "project-image-assets/project9/project9.png",
+  },
+  {
     id: "social-downloader",
     imageLoc: "project-image-assets/project7/project7.png",
   },
